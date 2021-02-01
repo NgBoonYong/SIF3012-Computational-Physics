@@ -53,9 +53,9 @@ y = list(la.solve(A, B))
 y = [y0] + y + [yn]
 
 # Print the results
-print('{:11}{}\n{}'.format(' xi', 'yi', '-'*16))
+print('{:15}{}\n{}'.format('    xi', 'yi', '-'*22))
 for i in range(n+1):
-    print('{:.2f}{:12.6f}'.format(x[i], y[i]))
+    print('{:8.4f}{:12.6f}'.format(x[i], y[i]))
 
 # Plot the graph
 mpl.title ('Finite Difference Method for BVP', fontsize=18)
