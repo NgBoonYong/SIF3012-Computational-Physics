@@ -75,9 +75,9 @@ y = [y1[i] + c*y3[i] for i in range(n+1)]
 
 # Print the results
 print(f'c = {c}\n')
-print('{:13}{}\n{}'.format('  xi', 'yi', '-'*18))
+print('{:15}{}\n{}'.format('    xi', 'yi', '-'*22))
 for i in range(n+1):
-    print('{:.4f}{:12.6f}'.format(x[i], y[i]))
+    print('{:8.4f}{:12.6f}'.format(x[i], y[i]))
 
 # Plot the graph
 mpl.title ('Linear Shooting Method for BVP', fontsize=18)
