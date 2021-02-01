@@ -28,7 +28,7 @@ xn, yn = 3, 43/3
 # Set the grid points
 n  = 20
 h  = (xn - x0) / n
-x  = [x0 + i*h for i in range(n+1)] #x0 to xn
+x  = [x0 + i*h for i in range(n+1)]
 yx = [yex(val) for val in x]
 
 # Calculate the initial guess, s0
